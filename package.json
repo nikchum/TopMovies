@@ -1,15 +1,15 @@
 {
-  "name": "parcel-project-template",
+  "name": "TopMovies",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://nikchum.github.io/TopMovies/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Hotmovies"
+    "build": "parcel build src/*.html --public-url /TopMovies/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nikchum/Hotmovies"
+    "url": "git+https://github.com/nikchum/TopMovies"
   },
   "dependencies": {
     "axios": "^0.27.2",
