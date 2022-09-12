@@ -1,0 +1,152 @@
+.hero {
+    @media screen and (max-width: 767px) {
+        padding: 20px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 60px 0;
+    }
+}
+
+.movies {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 767px) {}
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: -32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: -16px;
+    }
+}
+
+.movies__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 16px 5px rgba(230, 149, 28, 1);
+    background-color: rgba(230, 149, 28, 0.082);
+    border-radius: 10px;
+    transition: transform 250ms linear;
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 96px) / 3);
+        margin: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 128px) / 4);
+        margin: 16px;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05);
+    }
+
+}
+
+
+.movies__img {
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+
+    @media screen and (max-width: 1199px) {
+
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 12px;
+
+    }
+}
+
+.movies__title {
+    padding: 0 5px;
+    margin-bottom: 5px;
+    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 14px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        font-size: 24px;
+    }
+}
+
+.movies__subtitle {
+    color: $main-color;
+
+    text-align: center;
+    margin-bottom: 5px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+    }
+}
+
+.movies__rating-name {
+
+    margin-bottom: 8px;
+    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+    }
+}
+
+.movies__rating {
+    display: inline-block;
+    padding: 3px 7px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: $main-color;
+    color: #ffffff;
+
+}
+
+.delete__btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: $main-color;
+    border-radius: 50%;
+
+    width: 45px;
+    height: 45px;
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    box-shadow: 0 0 8px 3px #d67b03;
+
+    transition: transform 250ms linear, box-shadow 250ms linear;
+
+
+    &:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 16px 3px #d67b03;
+    }
+}
