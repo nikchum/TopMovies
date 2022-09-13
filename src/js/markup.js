@@ -12,5 +12,5 @@ export function createMarkupLogOut(data) {
 }
 
 export function createBtn(id) {
-  return `<button id =${id} class="delete__btn" type="button">X</button>`;
+  return `<button id =${id} class="delete__btn" type="button">DELETE</button>`;
 }
