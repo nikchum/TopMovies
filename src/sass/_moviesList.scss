@@ -35,6 +35,7 @@
     transition: transform 250ms linear;
 
     @media screen and (max-width: 767px) {
+
         &:not(:last-child) {
             margin-bottom: 30px;
         }
@@ -43,11 +44,13 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: calc((100% - 96px) / 3);
         margin: 16px;
+
     }
 
     @media screen and (min-width: 1200px) {
         width: calc((100% - 128px) / 4);
         margin: 16px;
+
     }
 
     &:hover,
@@ -67,10 +70,20 @@
         margin-bottom: 8px;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        height: 368px;
+    }
+
     @media screen and (min-width: 1200px) {
         margin-bottom: 12px;
+        height: 414px;
 
     }
+
+
+
+
+
 }
 
 .movies__title {
